@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Aumentei a altura da janela para caber a tabela -->
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" spacing="15.0" style="-fx-background-color: #f0f4f8; -fx-padding: 20;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atividade2_rev02.CarroController">
+    <children>
+        <!-- Título e Ícone -->
+        <Label style="-fx-font-size: 32px;" text="🚗" />
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #333;" text="Cadastro de Carros" />
+
+        <!-- Campos de Texto -->
+        <TextField fx:id="marcaField" maxWidth="300.0" promptText="Marca do carro" style="-fx-font-size: 14px;" />
+        <TextField fx:id="modeloField" maxWidth="300.0" promptText="Modelo do carro" style="-fx-font-size: 14px;" />
+        <TextField fx:id="anoField" maxWidth="300.0" promptText="Ano do carro" style="-fx-font-size: 14px;" />
+
+        <!-- Botões de Ação CRUD -->
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <Button onAction="#salvarCarro" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Salvar" />
+                <Button onAction="#procurarCarro" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-weight: bold;" text="Procurar" />
+                <Button onAction="#atualizarCarro" style="-fx-background-color: #FFC107; -fx-text-fill: white; -fx-font-weight: bold;" text="Atualizar" />
+                <Button onAction="#deletarCarro" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-weight: bold;" text="Deletar" />
+            </children>
+        </HBox>
+
+        <!-- Campo de Mensagem -->
+        <TextField fx:id="mensagemField" editable="false" focusTraversable="false" maxWidth="320.0" promptText="Mensagens do sistema..." style="-fx-background-color: #e0e0e0; -fx-text-fill: #555;" />
+
+        <!-- NOVA TABELA PARA EXIBIR OS DADOS -->
+        <TableView fx:id="tabelaCarros" prefHeight="200.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="colunaMarca" prefWidth="150.0" text="Marca" />
+                <TableColumn fx:id="colunaModelo" prefWidth="150.0" text="Modelo" />
+                <TableColumn fx:id="colunaAno" prefWidth="100.0" text="Ano" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>

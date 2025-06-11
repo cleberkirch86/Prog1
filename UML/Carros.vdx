@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+    <Pages>
+        <Page>
+            <Shapes>
+                <Shape ID="1" Name="Carro" Type="UMLClass">
+                    <Attributes>
+                        <Attribute Name="marca" Type="String" />
+                        <Attribute Name="cor" Type="String" />
+                        <Attribute Name="ano" Type="int" />
+                    </Attributes>
+                    <Methods>
+                        <Method Name="acelerar" ReturnType="void" />
+                        <Method Name="frear" ReturnType="void" />
+                        <Method Name="buzinar" ReturnType="void" />
+                    </Methods>
+                </Shape>
+            </Shapes>
+        </Page>
+    </Pages>
+</VisioDocument>

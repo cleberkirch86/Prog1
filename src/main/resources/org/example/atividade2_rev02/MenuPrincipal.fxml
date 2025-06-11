@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Importações necessárias para componentes e layout do JavaFX -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Layout principal do menu: HBox com dois filhos (menu lateral e área de conteúdo) -->
+
+<HBox prefHeight="480.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atividade2_rev02.MenuController">
+
+    <!-- VBox lateral esquerda (menu) -->
+    <VBox alignment="TOP_CENTER" prefWidth="300.0" spacing="15.0" style="-fx-background-color: #2c3e50;" HBox.hgrow="NEVER">
+
+        <!-- Espaçamento interno do VBox -->
+        <padding>
+            <Insets bottom="20" left="10" right="10" top="30" />
+        </padding>
+
+        <!-- Botão para abrir tela de "Carro" -->
+        <Button fx:id="btnCarro" maxWidth="120" onAction="#abrirCarro" prefWidth="120" style="-fx-background-color: #3498db; -fx-text-fill: white;" text="Carro" />
+
+
+
+        <Button fx:id="btnCadeira" maxWidth="120" onAction="#abrirCadeira" prefWidth="120" style="-fx-background-color: #2ecc71; -fx-text-fill: white;" text="Livro" />
+
+        <!-- Botão para abrir tela de "Filme" -->
+        <Button fx:id="btnFilme" maxWidth="120" onAction="#abrirFilme" prefWidth="120" style="-fx-background-color: #f39c12; -fx-text-fill: white;" text="Filme" />
+
+        <!-- Botão para abrir tela de "Celular" -->
+        <Button fx:id="btnCelular" maxWidth="120" onAction="#abrirCelular" prefWidth="120" style="-fx-background-color: #9b59b6; -fx-text-fill: white;" text="Celular" />
+
+        <!-- Botão para abrir tela de "Aluno" -->
+        <Button fx:id="btnAluno" maxWidth="120" onAction="#abrirAluno" prefWidth="120" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Aluno" />
+
+        <!-- Botão para abrir tela de "Animal" -->
+        <Button fx:id="btnAnimal" maxWidth="120" onAction="#abrirAnimal" prefWidth="120" style="-fx-background-color: #16a085; -fx-text-fill: white;" text="Animal" />
+
+        <!-- Botão para abrir tela de "Time de Futebol" -->
+        <Button fx:id="btnTimeFutebol" maxWidth="120" onAction="#abrirTime" prefWidth="120" style="-fx-background-color: #155fd4; -fx-text-fill: white;" text="Time de Futebol" />
+   
+          <!-- Botão para abrir tela de "Time de Futebol" -->
+       <Button fx:id="btnRelogio" maxWidth="120" onAction="#abrirRelogio" prefWidth="120" style="-fx-background-color: #155fd4; -fx-text-fill: white;" text="Relogio" />
+    </VBox>
+
+    <!-- Área onde será exibido o conteúdo carregado (via StackPane) -->
+    <StackPane fx:id="conteudoArea" style="-fx-background-color: #ecf0f1;" HBox.hgrow="ALWAYS" />
+
+</HBox>

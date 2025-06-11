@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.atividade2_rev02.RelogioController"
+      spacing="10">
+
+    <Label text="Cadastro de Relógio Inteligente" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+    <TextField fx:id="txtMarca" promptText="Marca"/>
+    <TextField fx:id="txtModelo" promptText="Modelo"/>
+    <CheckBox fx:id="chkMonitoramentoSono" text="Monitoramento de Sono"/>
+    <Button text="Cadastrar Relógio" onAction="#cadastrarRelogio"/>
+
+    <Separator/>
+    <Button text="Listar Relógios Cadastrados" onAction="#listarRelogios"/>
+
+    <TextArea fx:id="txtAreaRelogios" prefHeight="200" wrapText="true"/>
+
+    <Button text="Limpar Cadastros!" onAction="#limparLista"/>
+
+    <padding><Insets top="20" bottom="20" left="20" right="20"/></padding>
+</VBox>

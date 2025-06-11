@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1">
+    <mxGraphModel dx="1094" dy="535" grid="1" gridsize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" value="" style="group" vertex="1" connectable="0">
+          <mxGeometry x="0" y="0" width="827" height="1169" as="geometry" />
+        </mxCell>
+        <mxCell id="1" value="" style="swimlane;html=1;whiteSpace=wrap;rounded=0;dashed=0;rounded=1;dropTarget=1;collapsible=0;" vertex="1" connectable="0">
+          <mxGeometry x="0" y="0" width="827" height="1169" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="Carro" style="swimlane" vertex="1" connectable="0">
+          <mxGeometry x="0" y="0" width="827" height="1169" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="modelo: String&#xa;cor: String&#xa;ano: int" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0">
+          <mxGeometry x="70" y="110" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="ligar()&#xa;desligar()&#xa;exibirInformacoes()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0">
+          <mxGeometry x="70" y="290" width="180" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

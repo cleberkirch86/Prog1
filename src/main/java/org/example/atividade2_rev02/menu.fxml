@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuController">
+    <Text text="Escolha uma opção:"/>
+    <Button text="Acelerar" onAction="#acelerar"/>
+    <Button text="Frear" onAction="#frear"/>
+    <Button text="Sair" onAction="#sair"/>
+</VBox>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="550.0" prefWidth="450.0" spacing="15.0" style="-fx-background-color: #e3f2fd; -fx-padding: 20;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atividade2_rev02.CelularController">
+    <children>
+        <Label style="-fx-font-size: 32px;" text="📱" />
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #1565c0;" text="Cadastro de Celulares" />
+
+        <TextField fx:id="txtMarca" maxWidth="300.0" promptText="Marca do Celular" />
+        <TextField fx:id="txtModelo" maxWidth="300.0" promptText="Modelo" />
+
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button onAction="#salvarCelular" style="-fx-background-color: #4CAF50;" text="Salvar" textFill="white" />
+            <Button onAction="#atualizarCelular" style="-fx-background-color: #FFC107;" text="Atualizar" textFill="white" />
+            <Button onAction="#deletarCelular" style="-fx-background-color: #f44336;" text="Deletar" textFill="white" />
+        </HBox>
+
+        <TextField fx:id="mensagemField" editable="false" focusTraversable="false" maxWidth="320.0" promptText="Mensagens do sistema..." />
+
+        <TableView fx:id="tabelaCelulares" prefHeight="200.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="colunaMarca" prefWidth="200.0" text="Marca" />
+                <TableColumn fx:id="colunaModelo" prefWidth="200.0" text="Modelo" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>
